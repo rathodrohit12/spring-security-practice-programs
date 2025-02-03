@@ -1,0 +1,14 @@
+create database demodb;
+use demodb;
+
+create table employee(
+	id int primary key auto_increment,
+    name varchar(255) not null,
+    email varchar(255) unique,
+    mobile bigint(10) unique,
+    password varchar(255)
+
+);
+
+desc employee;
+
